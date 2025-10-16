@@ -1,8 +1,8 @@
 # Actividad14-TablasHash
 
-# 🧮 Actividad: Función Hash para Códigos EAN-13
+# Actividad 14.1: Función Hash para Códigos EAN-13
 
-## 🎯 Objetivo
+## Objetivo
 Implementar una **tabla hash en C** para almacenar los patrones binarios que representan los dígitos del estándar **EAN-13**.
 
 Cada patrón tiene 7 bits y representa un dígito (0–9).  
@@ -10,19 +10,11 @@ Tu tarea será completar las funciones y probar la búsqueda de los códigos.
 
 ---
 
-## 📂 Archivos
-- `hash_ean13.c`: código base.
-- `README.md`: instrucciones y tabla de referencia.
-
----
-
 ## Instrucciones
 
-1. Completa el código para manejar **colisiones** (por ejemplo, usando listas enlazadas).
-2. Agrega todas las codificaciones posibles (izquierda impar, izquierda par y derecha).
-3. Implementa la función `buscar()` para devolver el dígito correcto.
-4. Prueba la función con varios códigos.
-5. (Opcional) Permite leer los códigos desde un archivo de texto.
+1. Completa el código act14-1.c para generar una función hash que determine en qué posición va cada código
+2. Agrega todas las codificaciones posibles (izquierda impar, izquierda par y derecha) con la función `insertar()`.
+4. Prueba las función `buscar()` con varios códigos.
 
 ---
 
@@ -41,3 +33,15 @@ Tu tarea será completar las funciones y probar la búsqueda de los códigos.
 | 8 | 0110111 | 0001001 | 1001000 |
 | 9 | 0001011 | 0010111 | 1110100 |
 
+--- 
+
+# Actividad 14.2: Manejo de colisiones de una tabla hash de mascotas
+
+## Objetivo
+Implementar una **tabla hash en C con manejo de colisiones** para almacenar el registro de mascotas de una clínica veterinaria.
+
+---
+
+## Instrucciones
+
+1. Completa los ToDo del código act14-2.c
