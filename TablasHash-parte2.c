@@ -71,6 +71,11 @@ int main() {
     insertarMascota("Nemo", "Pez");
     insertarMascota("Copito", "Conejo");
     insertarMascota("Max", "Perro"); // posible colisión con Milo
+    insertarMascota("Mateo", "Gato"); // colisión con Milo y Max (M)
+    insertarMascota("Lucas", "Ave");  // colisión con Luna (L)
+    insertarMascota("Nina", "Gato");  // colisión con Nemo (N)
+    insertarMascota("Coco", "Loro");  // colisión con Copito (C)
+    insertarMascota("Marta", "Tortuga"); // colisión con Milo, Max, Mateo (M)
 
     printf("\nBuscando mascotas:\n");
 
