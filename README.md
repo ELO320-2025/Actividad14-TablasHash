@@ -1,47 +1,40 @@
 # Actividad14-TablasHash
 
-# Actividad 14.1: Función Hash para Códigos EAN-13
+# Actividad 14.1: Tabla Hash para Perfiles de Usuario
 
 ## Objetivo
-Implementar una **tabla hash en C** para almacenar los patrones binarios que representan los dígitos del estándar **EAN-13**.
+Implementar una **tabla hash en C** para almacenar perfiles de usuario con nombre, email y contraseña.
 
-Cada patrón tiene 7 bits y representa un dígito (0–9).  
-Tu tarea será completar las funciones y probar la búsqueda de los códigos.
+Cada usuario se almacena usando el email como clave. Debes completar la función hash y probar la inserción y búsqueda de usuarios.
 
 ---
 
 ## Instrucciones
 
-1. Completa el código act14-1.c para generar una función hash que determine en qué posición va cada código
-2. Agrega todas las codificaciones posibles (izquierda impar, izquierda par y derecha) con la función `insertar()`.
-4. Prueba las función `buscar()` con varios códigos.
+1. Completa el código TablasHash-parte1.c para implementar una función hash que determine en qué posición va cada usuario según su email.
+2. Inserta varios usuarios de ejemplo usando la función `insertar()`.
+3. Prueba la función `buscar()` ingresando distintos emails.
 
 ---
 
-## 🔢 Tabla de Códigos EAN-13
-
-| Dígito | Izquierda Impar | Izquierda Par | Derecha  |
-|:-------:|:---------------:|:-------------:|:--------:|
-| 0 | 0001101 | 0100111 | 1110010 |
-| 1 | 0011001 | 0110011 | 1100110 |
-| 2 | 0010011 | 0011011 | 1101100 |
-| 3 | 0111101 | 0100001 | 1000010 |
-| 4 | 0100011 | 0011101 | 1011100 |
-| 5 | 0110001 | 0111001 | 1001110 |
-| 6 | 0101111 | 0000101 | 1010000 |
-| 7 | 0111011 | 0010001 | 1000100 |
-| 8 | 0110111 | 0001001 | 1001000 |
-| 9 | 0001011 | 0010111 | 1110100 |
 
 --- 
 
-# Actividad 14.2: Manejo de colisiones de una tabla hash de mascotas
+# Actividad 14.2: Manejo de colisiones en una tabla hash de mascotas
 
 ## Objetivo
-Implementar una **tabla hash en C con manejo de colisiones** para almacenar el registro de mascotas de una clínica veterinaria.
+Implementar una **tabla hash en C** para almacenar el registro de mascotas de una clínica veterinaria. El hash se basa en la primera letra del nombre.
 
 ---
 
 ## Instrucciones
+1. Completa los ToDo del código TablasHash-parte2.c
+2. Observa que se agregaron más mascotas con nombres que generan colisiones (misma letra inicial).
+3. El programa muestra mensajes cuando ocurre una colisión.
 
-1. Completa los ToDo del código act14-2.c
+---
+
+# Cambios recientes
+
+- Parte 1 ahora almacena perfiles de usuario (nombre, email, contraseña) y busca por email.
+- Parte 2 incluye más ejemplos de colisiones al insertar mascotas con la misma letra inicial.
